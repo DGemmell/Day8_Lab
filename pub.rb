@@ -11,4 +11,8 @@ class Pub
  def count_drinks()
    return @drinks.count()
  end
+
+ def sell_drink(drink)
+   @till += drink.price
+ end
 end
