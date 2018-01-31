@@ -7,4 +7,8 @@ class Pub
    @till = 0
    @drinks = []
  end
+
+ def count_drinks()
+   return @drinks.count()
+ end
 end
