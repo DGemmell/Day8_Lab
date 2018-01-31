@@ -7,7 +7,7 @@ require_relative ("../drink")
 class CustomerTest < MiniTest::Test
 
   def setup
-    @customer = Customer.new("Joe", 20)
+    @customer = Customer.new("Joe", 20, 30)
     @drink = Drink.new("Wine", 5)
 
   end
@@ -27,5 +27,10 @@ class CustomerTest < MiniTest::Test
     assert_equal(15, @customer.wallet)
 
   end
+
+  def test_get_age
+    assert_equal(30, @customer.age)
+  end
+
 
 end
