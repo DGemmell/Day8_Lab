@@ -12,7 +12,10 @@ class Pub
    return @drinks.count()
  end
 
- def sell_drink(drink)
-   @till += drink.price
+ def sell_drink(drink, customer)
+   if customer.is_legal
+     @till += drink.price
+   end
  end
+
 end
